@@ -1054,6 +1054,7 @@ body.loaded .title-line {
 /* Title Styling */
 .hero-title-container {
     margin-bottom: 2rem;
+    margin-top: 100px;
 }
 
 .hero-title {
