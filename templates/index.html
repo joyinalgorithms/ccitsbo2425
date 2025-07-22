@@ -730,8 +730,17 @@
                 <div class="appreciation-content">
                     <h2 class="appreciation-title">Thank You!</h2>
                     <p class="appreciation-message typewriter-text" id="typewriter-message">
-                        <span class="typed-text"></span>
-                        <span class="cursor">|</span>
+                        To everyone who made this incredible journey not only possible but truly unforgettable —
+
+To the dedicated officers of the CCIT SBO: your unwavering commitment, tireless efforts, and genuine passion have shaped every milestone we've reached. Your leadership has been the heart of our progress.
+
+To our supportive advisers, faculty, chairpersons, and dean: thank you for believing in us, guiding us, and standing by us with wisdom and encouragement every step of the way.
+
+To our fellow students: your enthusiasm, participation, and spirit of unity have brought life to every endeavor. You reminded us of why we do what we do.
+
+And to the entire PRMSU community: thank you for walking with us, for every cheer, every word of encouragement, and every hand extended in support.
+
+Together, we've built more than achievements — we've built a community. And for that, we are deeply grateful.
                     </p>
                     <div class="appreciation-icons">
                         <i class="fas fa-heart pulse-icon"></i>
@@ -925,95 +934,7 @@
             observer.observe(section);
         }
     }
-            // Typewriter Effect for Appreciation Message
-    class TypewriterEffect {
-        constructor() {
-            this.text = `To everyone who made this incredible journey not only possible but truly unforgettable —
 
-To the dedicated officers of the CCIT SBO: your unwavering commitment, tireless efforts, and genuine passion have shaped every milestone we've reached. Your leadership has been the heart of our progress.
-
-To our supportive advisers, faculty, chairpersons, and dean: thank you for believing in us, guiding us, and standing by us with wisdom and encouragement every step of the way.
-
-To our fellow students: your enthusiasm, participation, and spirit of unity have brought life to every endeavor. You reminded us of why we do what we do.
-
-And to the entire PRMSU community: thank you for walking with us, for every cheer, every word of encouragement, and every hand extended in support.
-
-Together, we've built more than achievements — we've built a community. And for that, we are deeply grateful.`;
-
-            this.typedTextElement = document.querySelector('.typed-text');
-            this.cursorElement = document.querySelector('.cursor');
-            this.textIndex = 0;
-            this.isTyping = false;
-            this.typingSpeed = 50; // milliseconds per character
-            this.init();
-        }
-
-        init() {
-            this.observeSection();
-        }
-
-        observeSection() {
-            const section = document.getElementById('appreciation');
-            if (!section) return;
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && !this.isTyping) {
-                                // Start typing animation when section comes into view
-                        setTimeout(() => {
-                            this.startTyping();
-                        }, 500); // Small delay before starting
-                    }
-                });
-            }, {
-                threshold: 0.3, // Trigger when 30% of section is visible
-                rootMargin: '0px 0px -100px 0px'
-            });
-
-            observer.observe(section);
-        }
-
-        startTyping() {
-            if (this.isTyping) return;
-
-            this.isTyping = true;
-            this.cursorElement.style.animation = 'blink 1s infinite';
-
-            const typeNextCharacter = () => {
-                if (this.textIndex < this.text.length) {
-                    const char = this.text.charAt(this.textIndex);
-
-                            // Handle line breaks
-                    if (char === '\n') {
-                        this.typedTextElement.innerHTML += '<br><br>';
-                    } else {
-                        this.typedTextElement.innerHTML += char;
-                    }
-
-                    this.textIndex++;
-
-                            // Vary typing speed slightly for more natural effect
-                    const speed = this.typingSpeed + (Math.random() * 30 - 15);
-                    setTimeout(typeNextCharacter, speed);
-
-                            // Auto-scroll to keep the typing in view
-                    this.typedTextElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                } else {
-                            // Typing complete
-                    this.cursorElement.style.animation = 'blink 1s infinite';
-                    setTimeout(() => {
-                        this.cursorElement.style.opacity = '0';
-                    }, 3000); // Hide cursor after 3 seconds
-                }
-            };
-
-            typeNextCharacter();
-        }
-    }
-            // Page Load Animation Controller
     class PageLoadController {
         constructor() {
             this.confettiSystem = new ConfettiSystem();
@@ -1104,7 +1025,7 @@ Together, we've built more than achievements — we've built a community. And fo
     document.addEventListener('DOMContentLoaded', function() {
         new FutureLeadersCarousel();
         new PageLoadController();
-        new TypewriterEffect();
+
     });
 </script>
 </body>
