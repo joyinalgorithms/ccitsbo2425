@@ -863,4 +863,9 @@ body.loaded .title-line {
   }
 }
 
-/* Responsive adjustments for typewriter */
+@media (max-width: 991.98px) { /* for screens smaller than lg */
+    [style*="margin-left: 25%"] {
+        margin-left: 0 !important;
+    }
+}
+
