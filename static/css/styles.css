@@ -607,7 +607,6 @@ body.loaded .title-line {
   max-width: 900px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  color: white !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
   text-align: left !important;
   padding: 2rem !important;
@@ -615,6 +614,7 @@ body.loaded .title-line {
   border-radius: 15px !important;
   backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: black;
 }
 
 .appreciation-icons {
@@ -1364,5 +1364,1628 @@ body.loaded .title-line {
 
     .hero-subtitle {
         font-size: 1.1rem;
+    }
+}
+/* Tech-themed Officers Section Enhancements */
+#officers {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tech Background Elements */
+.tech-background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Circuit Pattern Animation */
+.circuit-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circuit-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba(37, 150, 190, 0.3), transparent);
+    animation: circuitPulse 3s ease-in-out infinite;
+}
+
+.line-1 {
+    width: 200px;
+    height: 2px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.line-2 {
+    width: 150px;
+    height: 2px;
+    top: 40%;
+    right: 15%;
+    animation-delay: 0.5s;
+}
+
+.line-3 {
+    width: 180px;
+    height: 2px;
+    bottom: 30%;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.line-4 {
+    width: 120px;
+    height: 2px;
+    top: 60%;
+    right: 25%;
+    animation-delay: 1.5s;
+}
+
+.circuit-node {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #37a0b4;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(37, 150, 190, 0.8);
+    animation: nodePulse 2s ease-in-out infinite;
+}
+
+.node-1 {
+    top: 20%;
+    left: 15%;
+    animation-delay: 0.2s;
+}
+
+.node-2 {
+    top: 40%;
+    right: 20%;
+    animation-delay: 0.7s;
+}
+
+.node-3 {
+    bottom: 30%;
+    left: 25%;
+    animation-delay: 1.2s;
+}
+
+.node-4 {
+    top: 60%;
+    right: 30%;
+    animation-delay: 1.7s;
+}
+
+@keyframes circuitPulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scaleX(1.1);
+    }
+}
+
+@keyframes nodePulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(37, 150, 190, 0.8);
+    }
+    50% {
+        transform: scale(1.5);
+        box-shadow: 0 0 20px rgba(37, 150, 190, 1);
+    }
+}
+
+/* Floating Tech Icons */
+.floating-tech-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tech-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(37, 150, 190, 0.2);
+    animation: floatTech 6s ease-in-out infinite;
+}
+
+.icon-1 {
+    top: 15%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.icon-2 {
+    top: 25%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+.icon-3 {
+    top: 45%;
+    left: 8%;
+    animation-delay: 2s;
+}
+
+.icon-4 {
+    top: 65%;
+    right: 12%;
+    animation-delay: 3s;
+}
+
+.icon-5 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.icon-6 {
+    bottom: 35%;
+    right: 8%;
+    animation-delay: 5s;
+}
+
+@keyframes floatTech {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.2;
+    }
+    25% {
+        transform: translateY(-15px) rotate(90deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateY(-15px) rotate(270deg);
+        opacity: 0.4;
+    }
+}
+
+/* Binary Rain Effect */
+.binary-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.binary-column {
+    position: absolute;
+    top: -100%;
+    width: 20px;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: rgba(37, 150, 190, 0.3);
+    animation: binaryFall 8s linear infinite;
+}
+
+.binary-column:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.binary-column:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.binary-column:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.binary-column:nth-child(4) {
+    left: 70%;
+    animation-delay: 6s;
+}
+
+.binary-column:nth-child(5) {
+    left: 90%;
+    animation-delay: 1s;
+}
+
+@keyframes binaryFall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Officer Cards with Tech Theme */
+.officer-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(37, 150, 190, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.officer-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(37, 150, 190, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.officer-card:hover::before {
+    left: 100%;
+}
+
+.officer-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow:
+        0 20px 40px rgba(37, 150, 190, 0.2),
+        0 0 20px rgba(37, 150, 190, 0.1);
+    border-color: rgba(37, 150, 190, 0.5);
+}
+
+/* Tech-themed Image Effects */
+.officer-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.officer-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(37, 150, 190, 0.1) 50%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.officer-card:hover .officer-image::after {
+    opacity: 1;
+    animation: scanLine 1s ease-in-out;
+}
+
+@keyframes scanLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.officer-image img {
+    transition: all 0.4s ease;
+    filter: grayscale(20%) contrast(1.1);
+}
+
+.officer-card:hover .officer-image img {
+    transform: scale(1.1);
+    filter: grayscale(0%) contrast(1.2) brightness(1.1);
+}
+
+/* Enhanced Section Title with Tech Effect */
+.section-title {
+    position: relative;
+    background: linear-gradient(45deg, #37a0b4, #2596be, #1e7a8c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+.section-title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(37, 150, 190, 0.3), transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textScan 2s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.3) drop-shadow(0 0 10px rgba(37, 150, 190, 0.5));
+    }
+}
+
+@keyframes textScan {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Officer Info Tech Enhancement */
+.officer-info h5 {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.officer-info h5::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #37a0b4, #2596be);
+    transition: width 0.3s ease;
+}
+
+.officer-card:hover .officer-info h5::after {
+    width: 100%;
+}
+
+.officer-info h6 {
+    position: relative;
+    overflow: hidden;
+}
+
+.officer-info h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(37, 150, 190, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.officer-card:hover .officer-info h6::before {
+    left: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tech-icon {
+        font-size: 1.5rem;
+    }
+
+    .binary-column {
+        font-size: 12px;
+    }
+
+    .circuit-line {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-tech-icons,
+    .binary-rain {
+        display: none;
+    }
+
+    .circuit-pattern {
+        opacity: 0.5;
+    }
+}
+/* Journey Section Animated Background */
+#journey {
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 25%, #dee2e6 50%, #e9ecef 75%, #f8f9fa 100%);
+    overflow: hidden;
+}
+
+.journey-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Animated Grid Lines */
+.animated-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba(37, 150, 190, 0.2), transparent);
+    animation: gridPulse 4s ease-in-out infinite;
+}
+
+.grid-line.horizontal {
+    width: 100%;
+    height: 1px;
+}
+
+.grid-line.vertical {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgba(37, 150, 190, 0.2), transparent);
+}
+
+.line-1 {
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.line-2 {
+    top: 50%;
+    animation-delay: 1s;
+}
+
+.line-3 {
+    top: 80%;
+    animation-delay: 2s;
+}
+
+.line-4 {
+    left: 15%;
+    animation-delay: 0.5s;
+}
+
+.line-5 {
+    left: 50%;
+    animation-delay: 1.5s;
+}
+
+.line-6 {
+    left: 85%;
+    animation-delay: 2.5s;
+}
+
+@keyframes gridPulse {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.02);
+    }
+}
+
+/* Floating Achievement Icons */
+.floating-achievements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.achievement-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgba(37, 150, 190, 0.15);
+    animation: floatAchievement 8s ease-in-out infinite;
+}
+
+.icon-1 {
+    top: 10%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.icon-2 {
+    top: 25%;
+    right: 12%;
+    animation-delay: 1.5s;
+}
+
+.icon-3 {
+    top: 45%;
+    left: 5%;
+    animation-delay: 3s;
+}
+
+.icon-4 {
+    top: 65%;
+    right: 8%;
+    animation-delay: 4.5s;
+}
+
+.icon-5 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 6s;
+}
+
+.icon-6 {
+    bottom: 35%;
+    right: 20%;
+    animation-delay: 7.5s;
+}
+
+@keyframes floatAchievement {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.15;
+    }
+    25% {
+        transform: translateY(-20px) rotate(90deg);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateY(-40px) rotate(180deg);
+        opacity: 0.35;
+    }
+    75% {
+        transform: translateY(-20px) rotate(270deg);
+        opacity: 0.25;
+    }
+}
+
+/* Progress Particles */
+.progress-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, rgba(37, 150, 190, 0.8), rgba(37, 150, 190, 0.2));
+    border-radius: 50%;
+    animation: particleMove 6s linear infinite;
+}
+
+.particle-1 {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    top: 30%;
+    left: 25%;
+    animation-delay: 0.8s;
+}
+
+.particle-3 {
+    top: 45%;
+    left: 40%;
+    animation-delay: 1.6s;
+}
+
+.particle-4 {
+    top: 60%;
+    left: 55%;
+    animation-delay: 2.4s;
+}
+
+.particle-5 {
+    top: 75%;
+    left: 70%;
+    animation-delay: 3.2s;
+}
+
+.particle-6 {
+    top: 20%;
+    right: 15%;
+    animation-delay: 4s;
+}
+
+.particle-7 {
+    top: 50%;
+    right: 30%;
+    animation-delay: 4.8s;
+}
+
+.particle-8 {
+    bottom: 25%;
+    right: 10%;
+    animation-delay: 5.6s;
+}
+
+@keyframes particleMove {
+    0% {
+        transform: translateX(0) translateY(0) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100px) translateY(-50px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Gradient Orbs */
+.gradient-orbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 150, 190, 0.1), rgba(37, 150, 190, 0.05), transparent);
+    animation: orbFloat 10s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+.orb-3 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    left: 60%;
+    animation-delay: 6s;
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.1);
+        opacity: 0.6;
+    }
+}
+
+/* Enhanced Timeline with Background Integration */
+.timeline {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline::before {
+    background: linear-gradient(to bottom,
+        rgba(37, 150, 190, 0.8) 0%,
+        rgba(37, 150, 190, 0.6) 50%,
+        rgba(37, 150, 190, 0.8) 100%);
+    box-shadow: 0 0 10px rgba(37, 150, 190, 0.3);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(37, 150, 190, 0.1);
+}
+
+.timeline-content:hover {
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(37, 150, 190, 0.3);
+}
+
+/* Section Title Enhancement */
+#journey .section-title {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .achievement-icon {
+        font-size: 2rem;
+    }
+
+    .orb {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .particle {
+        width: 4px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-achievements {
+        opacity: 0.5;
+    }
+
+    .gradient-orbs {
+        opacity: 0.3;
+    }
+
+    .progress-particles {
+        display: none;
+    }
+}/* Journey Section Animated Background */
+#journey {
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 25%, #dee2e6 50%, #e9ecef 75%, #f8f9fa 100%);
+    overflow: hidden;
+}
+
+.journey-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Animated Grid Lines */
+.animated-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba(37, 150, 190, 0.2), transparent);
+    animation: gridPulse 4s ease-in-out infinite;
+}
+
+.grid-line.horizontal {
+    width: 100%;
+    height: 1px;
+}
+
+.grid-line.vertical {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgba(37, 150, 190, 0.2), transparent);
+}
+
+.line-1 {
+    top: 20%;
+    animation-delay: 0s;
+}
+
+.line-2 {
+    top: 50%;
+    animation-delay: 1s;
+}
+
+.line-3 {
+    top: 80%;
+    animation-delay: 2s;
+}
+
+.line-4 {
+    left: 15%;
+    animation-delay: 0.5s;
+}
+
+.line-5 {
+    left: 50%;
+    animation-delay: 1.5s;
+}
+
+.line-6 {
+    left: 85%;
+    animation-delay: 2.5s;
+}
+
+@keyframes gridPulse {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.02);
+    }
+}
+
+/* Floating Achievement Icons */
+.floating-achievements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.achievement-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgba(37, 150, 190, 0.15);
+    animation: floatAchievement 8s ease-in-out infinite;
+}
+
+.icon-1 {
+    top: 10%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.icon-2 {
+    top: 25%;
+    right: 12%;
+    animation-delay: 1.5s;
+}
+
+.icon-3 {
+    top: 45%;
+    left: 5%;
+    animation-delay: 3s;
+}
+
+.icon-4 {
+    top: 65%;
+    right: 8%;
+    animation-delay: 4.5s;
+}
+
+.icon-5 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 6s;
+}
+
+.icon-6 {
+    bottom: 35%;
+    right: 20%;
+    animation-delay: 7.5s;
+}
+
+@keyframes floatAchievement {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.15;
+    }
+    25% {
+        transform: translateY(-20px) rotate(90deg);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateY(-40px) rotate(180deg);
+        opacity: 0.35;
+    }
+    75% {
+        transform: translateY(-20px) rotate(270deg);
+        opacity: 0.25;
+    }
+}
+
+/* Progress Particles */
+.progress-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, rgba(37, 150, 190, 0.8), rgba(37, 150, 190, 0.2));
+    border-radius: 50%;
+    animation: particleMove 6s linear infinite;
+}
+
+.particle-1 {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    top: 30%;
+    left: 25%;
+    animation-delay: 0.8s;
+}
+
+.particle-3 {
+    top: 45%;
+    left: 40%;
+    animation-delay: 1.6s;
+}
+
+.particle-4 {
+    top: 60%;
+    left: 55%;
+    animation-delay: 2.4s;
+}
+
+.particle-5 {
+    top: 75%;
+    left: 70%;
+    animation-delay: 3.2s;
+}
+
+.particle-6 {
+    top: 20%;
+    right: 15%;
+    animation-delay: 4s;
+}
+
+.particle-7 {
+    top: 50%;
+    right: 30%;
+    animation-delay: 4.8s;
+}
+
+.particle-8 {
+    bottom: 25%;
+    right: 10%;
+    animation-delay: 5.6s;
+}
+
+@keyframes particleMove {
+    0% {
+        transform: translateX(0) translateY(0) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100px) translateY(-50px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Gradient Orbs */
+.gradient-orbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 150, 190, 0.1), rgba(37, 150, 190, 0.05), transparent);
+    animation: orbFloat 10s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+.orb-3 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    left: 60%;
+    animation-delay: 6s;
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.1);
+        opacity: 0.6;
+    }
+}
+
+/* Enhanced Timeline with Background Integration */
+.timeline {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline::before {
+    background: linear-gradient(to bottom,
+        rgba(37, 150, 190, 0.8) 0%,
+        rgba(37, 150, 190, 0.6) 50%,
+        rgba(37, 150, 190, 0.8) 100%);
+    box-shadow: 0 0 10px rgba(37, 150, 190, 0.3);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(37, 150, 190, 0.1);
+}
+
+.timeline-content:hover {
+    background: rgba(255, 255, 255, 0.98);
+    border-color: rgba(37, 150, 190, 0.3);
+}
+
+/* Section Title Enhancement */
+#journey .section-title {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .achievement-icon {
+        font-size: 2rem;
+    }
+
+    .orb {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .particle {
+        width: 4px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-achievements {
+        opacity: 0.5;
+    }
+
+    .gradient-orbs {
+        opacity: 0.3;
+    }
+
+    .progress-particles {
+        display: none;
+    }
+}
+/* Journey Section with Animated Background */
+#journey {
+    position: relative;
+    background: linear-gradient(135deg, #1e84aa 0%, #4cdce5 100%);
+    overflow: hidden;
+}
+
+/* Animated Background Container */
+.journey-animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Floating Shapes */
+.bg-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.shape-1 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation: float1 6s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 60px;
+    height: 60px;
+    top: 60%;
+    left: 80%;
+    animation: float2 8s ease-in-out infinite;
+}
+
+.shape-3 {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 20%;
+    animation: float3 7s ease-in-out infinite;
+}
+
+.shape-4 {
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    left: 70%;
+    animation: float1 5s ease-in-out infinite;
+}
+
+.shape-5 {
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 60%;
+    animation: float2 9s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(-180deg); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-25px) rotate(90deg); }
+}
+
+/* Moving Dots */
+.moving-dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: moveDot 10s linear infinite;
+}
+
+.dot-1 {
+    top: 10%;
+    left: 0%;
+    animation-delay: 0s;
+}
+
+.dot-2 {
+    top: 30%;
+    left: 0%;
+    animation-delay: 2s;
+}
+
+.dot-3 {
+    top: 50%;
+    left: 0%;
+    animation-delay: 4s;
+}
+
+.dot-4 {
+    top: 70%;
+    left: 0%;
+    animation-delay: 6s;
+}
+
+.dot-5 {
+    top: 20%;
+    left: 0%;
+    animation-delay: 8s;
+}
+
+.dot-6 {
+    top: 80%;
+    left: 0%;
+    animation-delay: 1s;
+}
+
+@keyframes moveDot {
+    0% {
+        left: -10px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+/* Wave Animation */
+.wave-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-animation svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+    animation: waveMove 10s ease-in-out infinite;
+}
+
+.wave-animation .shape-fill {
+    fill: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes waveMove {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+}
+
+/* Content Styling */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title-underline {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.timeline {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline::before {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeline-date {
+    background: rgba(255, 255, 255, 0.9);
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .shape {
+        display: none;
+    }
+
+    .wave-animation svg {
+        height: 40px;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+}
+/* Paper-like Appreciation Section */
+.appreciation-section {
+    position: relative;
+    background: #f5f5dc;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&display=swap');
+
+.appreciation-content {
+    position: relative;
+    z-index: 2;
+    padding: 3rem 2rem;
+}
+
+.handwritten-title {
+    font-family: 'Caveat', cursive;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.handwritten-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #2c3e50, transparent);
+    border-radius: 2px;
+}
+
+.handwritten-message-container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow:
+        0 4px 6px rgba(0,0,0,0.1),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    transform: rotate(0.5deg);
+}
+
+.handwritten-message-container::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    background: #ffd700;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.handwritten-text {
+    font-family: 'Kalam', cursive;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #2c3e50;
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.typed-text {
+    display: inline;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #2c3e50;
+    margin-left: 2px;
+    width: 2px;
+    animation: blink 1s infinite;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Handwritten Icons */
+.appreciation-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.handwritten-icon {
+    font-size: 3rem;
+    color: #e74c3c;
+    animation: pulse-icon 1.5s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    transform: rotate(-5deg);
+}
+
+.handwritten-icon:nth-child(2) {
+    color: #f39c12;
+    transform: rotate(3deg);
+    animation-delay: 0.5s;
+}
+
+.handwritten-icon:nth-child(3) {
+    color: #27ae60;
+    transform: rotate(-3deg);
+    animation-delay: 1s;
+}
+
+@keyframes pulse-icon {
+    0%, 100% {
+        transform: scale(1) rotate(-5deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-5deg);
+    }
+}
+
+/* Handwritten Button */
+.handwritten-btn {
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border: 3px solid #2c3e50;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    transform: rotate(-1deg);
+    transition: all 0.3s ease;
+    box-shadow:
+        0 4px 8px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.handwritten-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.handwritten-btn:hover {
+    transform: rotate(0deg) translateY(-3px);
+    box-shadow:
+        0 8px 16px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.4);
+    background: linear-gradient(45deg, #2980b9, #3498db);
+}
+
+.handwritten-btn:hover::before {
+    left: 100%;
+}
+
+.handwritten-btn:active {
+    transform: rotate(-1deg) translateY(0px);
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Paper fold effect */
+.appreciation-content::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid rgba(0,0,0,0.1);
+    z-index: 3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .handwritten-title {
+        font-size: 3rem;
+    }
+
+    .handwritten-text {
+        font-size: 1.2rem;
+    }
+
+    .handwritten-message-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .appreciation-icons {
+        gap: 2rem;
+    }
+
+    .handwritten-icon {
+        font-size: 2.5rem;
+    }
+
+    .paper-holes {
+        left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .handwritten-title {
+        font-size: 2.5rem;
+    }
+
+    .handwritten-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .handwritten-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
     }
 }
