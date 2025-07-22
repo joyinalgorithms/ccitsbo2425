@@ -1,245 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appreciation Awards 2024 | Excellence in Leadership</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Celebrating excellence and outstanding achievements in our community. Annual appreciation awards recognizing exceptional contributions and leadership.">
-    <meta name="keywords" content="appreciation, awards, recognition, excellence, leadership, community, achievements">
-    <meta name="author" content="Appreciation Committee">
-    <meta name="robots" content="index, follow">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appreciation Awards 2024 | Excellence in Leadership</title>
+        <meta name="description" content="Celebrating excellence and outstanding achievements in our community. Annual appreciation awards recognizing exceptional contributions and leadership.">
+        <meta name="keywords" content="appreciation, awards, recognition, excellence, leadership, community, achievements">
+        <meta name="author" content="Appreciation Committee">
+        <meta name="robots" content="index, follow">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <body>
+        <div id="particles-container"></div>
+        <div id="confetti-container"></div>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <!-- Interactive Background -->
-    <div id="particles-container"></div>
-    <div id="confetti-container"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+            <div class="container">
+                <div class="navbar-brand-container d-flex align-items-center">
+                    <div class="logo-group mx-4">
+                        <img src="/static/images/prmsu-logo.png" alt="PRMSU" class="nav-logo">
+                        <span class="logo-text">PRMSU</span>
+                    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
-        <div class="container">
-            <div class="navbar-brand-container d-flex align-items-center">
-                <div class="logo-group">
-                    <img src="/placeholder.svg?height=40&width=40&text=CCIT" alt="CCIT" class="nav-logo">
-                    <span class="logo-text">CCIT</span>
+                    <div class="logo-group">
+                        <img src="/static/images/ccit-logo.png" alt="CCIT" class="nav-logo">
+                        <span class="logo-text">CCIT</span>
+                    </div>
+
+                    <div class="logo-group">
+                        <img src="/static/images/sbo-logo.png" alt="Student Government" class="nav-logo">
+                        <span class="logo-text">CCIT- SBO</span>
+                    </div>
                 </div>
-                <div class="logo-group mx-4">
-                    <img src="/placeholder.svg?height=40&width=40&text=PRMSU" alt="PRMSU" class="nav-logo">
-                    <span class="logo-text">PRMSU</span>
-                </div>
-                <div class="logo-group">
-                    <img src="/placeholder.svg?height=40&width=40&text=SG" alt="Student Government" class="nav-logo">
-                    <span class="logo-text">Student Gov</span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#officers">Officers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#journey">Our Journey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#future-leaders">Join Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#appreciation">Appreciation</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#officers">Officers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#journey">Our Journey</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#future-leaders">Join Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#appreciation">Appreciation</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-12 text-center">
-                    <div class="hero-content">
-                        <h1 class="hero-title">
-                            <span class="title-line">Our Journey</span>
-                            <span class="title-line">of</span>
-                            <span class="title-line highlight">Excellence</span>
-                        </h1>
-                        <p class="hero-subtitle">
-                            Celebrating our achievements and milestones together
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#journey" class="btn btn-primary btn-lg me-3">Explore Journey</a>
-                            <a href="#officers" class="btn btn-outline-light btn-lg">Meet Our Team</a>
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-12 text-center">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                <span class="title-line">College of Communication and Information Technology</span>
+                                <span class="title-line">Student Body Organization</span>
+                                <span class="title-line highlight">Academic Year 2024-2025</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Celebrating our achievements and milestones together
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="#journey" class="btn btn-primary btn-lg me-3">Explore Journey</a>
+                                <a href="#officers" class="btn btn-outline-light btn-lg">Meet Our Team</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+        <section id="officers" class="py-5" style="background-color: #53dbe9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title">Our SBO Team</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="margin-left: 25%" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/sirdan.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Sir Dan</h5>
+                                <h6>Adviser</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/maammay.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Ma'am May Ann</h5>
+                                <h6>Adviser</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/joy.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Joy</h5>
+                                <h6>President</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/den.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Den</h5>
+                                <h6>Vice President Internal</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/jm.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>JM</h5>
+                                <h6>Vice President External</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/meli.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Meli</h5>
+                                <h6>Secretary</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/jhed.jpg" alt="Assistant Secretary" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Jhed</h5>
+                                <h6>Assistant Secretary</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/felix.jpg" alt="Treasurer" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Felix</h5>
+                                <h6>Treasurer</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/lance.jpg" alt="Assistant Treasurer" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Lance</h5>
+                                <h6>Assistant Treasurer</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/luof.jpg" alt="Auditor" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Luofin</h5>
+                                <h6>Auditor</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/grant.jpg" alt="Assistant Auditor" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Grant</h5>
+                                <h6>Assistant Auditor</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/gwen.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Gwen</h5>
+                                <h6>P.I.O</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/lynus.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Lynus</h5>
+                                <h6>Business Manager</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/jonell.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Jonell</h5>
+                                <h6>Business Manager</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/adrian.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Adrian</h5>
+                                <h6>Business Manager</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/aldrine.heic" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Aldrine</h5>
+                                <h6>Business Manager</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/engel.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Engelbert</h5>
+                                <h6>Sergeant at Arms</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/donald.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Donald</h5>
+                                <h6>Sergeant at Arms</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/reymar.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Reymar</h5>
+                                <h6>Sergeant at Arms</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/james.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>James</h5>
+                                <h6>Sergeant at Arms</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/jhonas.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Jhonas</h5>
+                                <h6>1st year Representative</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/allaine.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Allaine</h5>
+                                <h6>2nd year Representative</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/mary.png" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Mary</h5>
+                                <h6>3rd year Representative</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/kheno.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Kheno</h5>
+                                <h6>4th year Representative</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/cielo.jpg" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Cielo</h5>
+                                <h6>Muse</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="officer-card">
+                            <div class="officer-image">
+                                <img src="/static/images/kaloy.webp" class="img-fluid">
+                            </div>
+                            <div class="officer-info">
+                                <h5>Jancarlo</h5>
+                                <h6>Escort</h6>
+                                <p>CCIT - Student Body Organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Officers Section -->
-    <section id="officers" class="py-5" style="background-color: #53dbe9;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Our Leadership Team</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
-
-            <!-- Advisers Section - Centered and Mobile Friendly -->
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/static/images/sirdan.jpg" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Sir Dan</h5>
-                            <h6>Adviser</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/static/images/maammay.jpg" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Ma'am May Ann</h5>
-                            <h6>Adviser</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Officers Section Title -->
-            <div class="row">
-                <div class="col-lg-12 text-center mb-4">
-                    <h3 class="section-subtitle">Student Officers</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/placeholder.svg?height=120&width=120&text=Joy" alt="President" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Joy</h5>
-                            <h6>President</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/placeholder.svg?height=120&width=120&text=Den" alt="Vice President" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Den</h5>
-                            <h6>Vice President Internal</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/placeholder.svg?height=120&width=120&text=Meli" alt="Secretary" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Meli</h5>
-                            <h6>Secretary</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="officer-card">
-                        <div class="officer-image">
-                            <img src="/placeholder.svg?height=120&width=120&text=Felix" alt="Treasurer" class="img-fluid">
-                        </div>
-                        <div class="officer-info">
-                            <h5>Felix</h5>
-                            <h6>Treasurer</h6>
-                            <p>CCIT - Student Body Organization</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Timeline Section -->
     <section id="journey" class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title">Our Journey of Accomplishments</h2>
+                    <h2 class="section-title">Our Notable Accomplishments</h2>
                     <div class="title-underline"></div>
                 </div>
             </div>
             <div class="timeline">
-                <!-- August 2024 -->
+
                 <div class="timeline-item">
                     <div class="timeline-date">August 02, 2024</div>
                     <div class="timeline-content">
                         <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=CCIT+Orientation" alt="CCIT Orientation 2024">
+                            <img src="/static/images/orientation.jpg" alt="CCIT Orientation 2024">
                         </div>
                         <h4>CCIT Orientation 2024</h4>
-                        <p>Welcoming new students to the College of Computing and Information Technology with comprehensive orientation programs.</p>
+                        <p>Welcomed freshmen into the College of Communication and Information Technology through engaging orientation sessions designed to build community and introduce academic life.
+                        </p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">August 31, 2024</div>
-                    <div class="timeline-content">
-                        <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=Magsaysay+Anniversary" alt="Magsaysay Anniversary">
-                        </div>
-                        <h4>117th Birth Anniversary of President Ramon Magsaysay</h4>
-                        <p>Commemorating the legacy of the late President Ramon Magsaysay and his contributions to Philippine governance.</p>
-                    </div>
-                </div>
-
-                <!-- October 2024 -->
                 <div class="timeline-item">
                     <div class="timeline-date">October 04, 2024</div>
                     <div class="timeline-content">
                         <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=Teachers+Day" alt="Teachers Day">
+                            <img src="/static/images/teachersday.jpg" alt="Teachers Day">
                         </div>
                         <h4>Teacher's Day Celebration</h4>
-                        <p>Honoring our dedicated educators and their invaluable contributions to student development and learning.</p>
+                        <p>A heartfelt tribute to our educators—a simple celebration—to honor their unwavering dedication to student growth.</p>
                     </div>
                 </div>
 
@@ -247,50 +468,106 @@
                     <div class="timeline-date">November 04, 2024</div>
                     <div class="timeline-content">
                         <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=RAITE+2024" alt="RAITE 2024">
+                            <img src="/static/images/raite.jpg" alt="RAITE 2024">
                         </div>
                         <h4>Regional Assembly on Information Technology Education (RAITE) 2024</h4>
-                        <p>Regional gathering of IT educators and students to discuss advancements in technology education.</p>
+                        <p>IT scholars and educators from across the region convened to collaborate, explore pedagogical innovations, and strengthen local networks in tech education.</p>
                     </div>
                 </div>
-
+                <div class="timeline-item">
+                    <div class="timeline-date">November 11-13, 2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="/static/images/presidentscup.jpg" alt="2nd President's Cup">
+                        </div>
+                        <h4>2nd President's Cup</h4>
+                        <p>CCIT teamed up with CIT to form Cluster 3, preparing festive decorations, chants, and props ahead of the parade and opening ceremonies. On day one, the girls’ Sepak Takraw squad claimed gold, followed by a men's Lawn Tennis gold medal. Day two saw the boys’ Sepak Takraw team deliver another win. On day three at the
+                            𝑆
+                            𝐸
+                            𝐿
+                            𝐵
+                            SELB Annex, CCIT chess teams earned silver (men) and bronze (women). Cluster 3 amassed an impressive 17 gold, 17 silver, and 12 bronze medals, securing 1st runner-up overall among 10 clusters.</p>
+                    </div>
+                </div>
                 <div class="timeline-item">
                     <div class="timeline-date">January 10, 2025</div>
                     <div class="timeline-content">
                         <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=Pasinaya" alt="Pasinaya">
+                            <img src="/static/images/pasinaya.jpg" alt="Pasinaya">
                         </div>
                         <h4>Pasinaya: A Year Opening Party to Unite, Celebrate and Progress</h4>
-                        <p>Grand opening celebration marking the beginning of a new academic year with unity and progress.</p>
+                        <p>Themed “Arko ng Kalinangan”, CCIT-SBO crafted a stunning arch combining Filipino heritage and tech — featuring robot Rizal, waterfalls, jeepneys, and bahay kubo. During the evening program, CCIT booths engaged crowds and student performers (folk and hip‑hop dancers, Aw’te Band) lit up the stage. Cluster 3’s band made the finals in the Battle of the Bands, while CCIT singers Marry Glo Sanchez and Katrina Leigh Lipata wowed with powerful renditions of local hits. The event closed with an electrifying DJ-hydrofoam party</p>
                     </div>
                 </div>
-
                 <div class="timeline-item">
-                    <div class="timeline-date">April 24, 2025</div>
+                    <div class="timeline-date">February 21, 2025</div>
                     <div class="timeline-content">
                         <div class="timeline-image">
-                            <img src="/placeholder.svg?height=200&width=400&text=TechnoFest" alt="TechnoFest">
+                            <img src="/static/images/smartskills.jpg" alt="SMART Skills">
+                        </div>
+                        <h4>IWABAIMS: S.M.A.R.T. Skills - Skills Mastery and Readiness in Technology</h4>
+                        <p>Focused on Skills Mastery and Readiness in Technology, this event showcased workshops and interactive training designed to prepare students from Sitio Olpoy for real-world tech challenges.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">March 20, 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="/static/images/gad.jpg" alt="CCIT Women's Month">
+                        </div>
+                        <h4>CCIT Women’s Month Celebration: WE for Gender Equality and Inclusive Society</h4>
+                        <p>Titled WE for Gender Equality and Inclusive Society, this event featured seminars, competitions, and performances advocating for justice and inclusivity.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">April 04, 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="/static/images/ircite.jpg" alt="IRCITE">
+                        </div>
+                        <h4>International Research Conference for IT Education</h4>
+                        <p>The International Research Conference on Information Technology Education (IRCITE) 2025 convened IT educators, students, and researchers from across Central Luzon at Bulacan State University to share cutting‑edge insights and emerging trends in IT education.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">April 22, 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="/static/images/panagkakaysa.png" alt="Panagkakaysa">
+                        </div>
+                        <h4>Panagkakaysa 2025</h4>
+                        <p>Celebrating PRMSU’s dual anniversaries under the theme “Creative Tropical Fusion”, CCIT ran innovative booths and banners, and competed in chant-making alongside other colleges. In stage performances, CCIT’s Singko Band placed 2nd runner-up in Battle of the Bands. CCIT also earned 3rd runner-up in Chant Making, and ranked among top booths/banners. The night ended with music, awards, and a grand hydrofoam celebration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">April 22, 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="/static/images/technofest.jpg" alt="TechnoFest">
                         </div>
                         <h4>TechnoFest 2025</h4>
-                        <p>Ultimate technology festival showcasing innovation, creativity, and technological advancement.</p>
+                        <p>A dynamic technology festival featuring student-led projects, creativity showcases, and hands-on demos celebrating technological progress and imagination.
+
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Future Leaders Section -->
     <section id="future-leaders" class="py-5 future-leaders-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="future-image-container">
                         <div class="image-stack">
-                            <img src="/placeholder.svg?height=500&width=600&text=Leadership+Excellence" alt="Future Leader 1" class="future-image active">
-                            <img src="/placeholder.svg?height=500&width=600&text=Student+Empowerment" alt="Future Leader 2" class="future-image">
-                            <img src="/placeholder.svg?height=500&width=600&text=Innovation+Hub" alt="Future Leader 3" class="future-image">
-                            <img src="/placeholder.svg?height=500&width=600&text=Community+Impact" alt="Future Leader 4" class="future-image">
-                            <img src="/placeholder.svg?height=500&width=600&text=Future+Vision" alt="Future Leader 5" class="future-image">
+                            <img src="/static/images/sbopic1.jpg" alt="Future Leader 1" class="future-image active">
+                            <img src="/static/images/sbopic2.jpg" alt="Future Leader 2" class="future-image">
+                            <img src="/static/images/sbopic3.jpg" alt="Future Leader 3" class="future-image">
+                            <img src="/static/images/sbopic4.jpg" alt="Future Leader 4" class="future-image">
+                            <img src="/static/images/sbopic51.png" alt="Future Leader 5" class="future-image">
                         </div>
                         <div class="image-overlay">
                             <div class="overlay-text">
@@ -315,210 +592,184 @@
                             <div class="requirements-section">
                                 <h4><i class="fas fa-star me-2"></i>Requirements to Join</h4>
                                 <div class="requirement-list">
-                                    <div class="requirement-item">
-                                        <div class="req-icon">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>
-                                        <div class="req-content">
-                                            <h6>Academic Excellence</h6>
-                                            <p>Maintain a GPA of 2.5 or higher</p>
-                                        </div>
+
+                                </div>
+                                <div class="requirement-item">
+                                    <div class="req-icon">
+                                        <i class="fas fa-heart"></i>
                                     </div>
-                                    <div class="requirement-item">
-                                        <div class="req-icon">
-                                            <i class="fas fa-users"></i>
-                                        </div>
-                                        <div class="req-content">
-                                            <h6>Leadership Experience</h6>
-                                            <p>Previous involvement in student organizations</p>
-                                        </div>
+                                    <div class="req-content">
+                                        <h6>Passion for Service</h6>
+                                        <p>Commitment to serving the student body</p>
                                     </div>
-                                    <div class="requirement-item">
-                                        <div class="req-icon">
-                                            <i class="fas fa-heart"></i>
-                                        </div>
-                                        <div class="req-content">
-                                            <h6>Passion for Service</h6>
-                                            <p>Commitment to serving the student body</p>
-                                        </div>
+                                </div>
+                                <div class="requirement-item">
+                                    <div class="req-icon">
+                                        <i class="fas fa-clock"></i>
                                     </div>
-                                    <div class="requirement-item">
-                                        <div class="req-icon">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                        <div class="req-content">
-                                            <h6>Time Commitment</h6>
-                                            <p>Available for meetings and events</p>
-                                        </div>
+                                    <div class="req-content">
+                                        <h6>Time Commitment</h6>
+                                        <p>Available for meetings and events</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="positions-available">
-                                <h4><i class="fas fa-crown me-2"></i>Available Positions</h4>
-                                <div class="positions-grid">
-                                    <!-- Executive Positions -->
-                                    <div class="position-card">
-                                        <i class="fas fa-crown"></i>
-                                        <span>President</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-user-tie"></i>
-                                        <span>Vice President Internal</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-handshake"></i>
-                                        <span>Vice President External</span>
-                                    </div>
+                        <div class="positions-available">
+                            <h4><i class="fas fa-crown me-2"></i>Available Positions</h4>
+                            <div class="positions-grid">
+                                <div class="position-card">
+                                    <i class="fas fa-crown"></i>
+                                    <span>President</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Vice President Internal</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Vice President External</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Secretary</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Assistant Secretary</span>
+                                </div>
 
-                                    <!-- Administrative Positions -->
-                                    <div class="position-card">
-                                        <i class="fas fa-file-alt"></i>
-                                        <span>Secretary</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-edit"></i>
-                                        <span>Assistant Secretary</span>
-                                    </div>
 
-                                    <!-- Financial Positions -->
-                                    <div class="position-card">
-                                        <i class="fas fa-coins"></i>
-                                        <span>Treasurer</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-calculator"></i>
-                                        <span>Assistant Treasurer</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-search-dollar"></i>
-                                        <span>Auditor</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-clipboard-check"></i>
-                                        <span>Assistant Auditor</span>
-                                    </div>
+                                <div class="position-card">
+                                    <i class="fas fa-coins"></i>
+                                    <span>Treasurer</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Assistant Treasurer</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-search-dollar"></i>
+                                    <span>Auditor</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-clipboard-check"></i>
+                                    <span>Assistant Auditor</span>
+                                </div>
 
-                                    <!-- Communication Position -->
-                                    <div class="position-card">
-                                        <i class="fas fa-bullhorn"></i>
-                                        <span>P.I.O.</span>
-                                    </div>
 
-                                    <!-- Management Positions -->
-                                    <div class="position-card">
-                                        <i class="fas fa-briefcase"></i>
-                                        <span>4 Business Managers</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-shield-alt"></i>
-                                        <span>4 Sergeant at Arms</span>
-                                    </div>
+                                <div class="position-card">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span>P.I.O.</span>
+                                </div>
 
-                                    <!-- Year Representatives -->
-                                    <div class="position-card">
-                                        <i class="fas fa-user-graduate"></i>
-                                        <span>1st Year Representative</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-user-graduate"></i>
-                                        <span>2nd Year Representative</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-user-graduate"></i>
-                                        <span>3rd Year Representative</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-user-graduate"></i>
-                                        <span>4th Year Representative</span>
-                                    </div>
 
-                                    <!-- Special Positions -->
-                                    <div class="position-card">
-                                        <i class="fas fa-gem"></i>
-                                        <span>Muse</span>
-                                    </div>
-                                    <div class="position-card">
-                                        <i class="fas fa-male"></i>
-                                        <span>Escort</span>
-                                    </div>
+                                <div class="position-card">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>4 Business Managers</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>4 Sergeant at Arms</span>
+                                </div>
+
+
+                                <div class="position-card">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>1st Year Representative</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>2nd Year Representative</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>3rd Year Representative</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>4th Year Representative</span>
+                                </div>
+
+
+                                <div class="position-card">
+                                    <i class="fas fa-gem"></i>
+                                    <span>Muse</span>
+                                </div>
+                                <div class="position-card">
+                                    <i class="fas fa-male"></i>
+                                    <span>Escort</span>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="cta-buttons">
-                                <button class="btn btn-primary btn-lg me-3 apply-btn">
-                                    <i class="fas fa-paper-plane me-2"></i>Apply Now
-                                </button>
-                                <button class="btn btn-outline-primary btn-lg info-btn">
-                                    <i class="fas fa-info-circle me-2"></i>More Information
-                                </button>
-                            </div>
+                        <div class="cta-buttons">
+                            <button class="btn btn-outline-primary btn-lg info-btn">
+                                <i class="fas fa-info-circle me-2"></i><a href="https://www.facebook.com/prmsumain.ccit.sbo">More Information</a>
+                            </button>
+                        </div>
 
-                            <div class="contact-info-box">
-                                <h5><i class="fas fa-envelope me-2"></i>Get in Touch</h5>
-                                <p><strong>Email:</strong> ccit.sbo@prmsu.edu.ph</p>
-                                <p><strong>Office:</strong> CCIT Student Affairs Office</p>
-                                <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
-                            </div>
+                        <div class="contact-info-box">
+                            <h5><i class="fas fa-envelope me-2"></i>Get in Touch</h5>
+                            <p><strong>Email:</strong> prmsumain.ccit.sbo@gmail.com</p>
+                            <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Appreciation Section -->
-    <section id="appreciation" class="py-5 appreciation-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="appreciation-content">
-                        <h2 class="appreciation-title">Thank You!</h2>
-                        <p class="appreciation-message typewriter-text" id="typewriter-message">
-                            <span class="typed-text"></span>
-                            <span class="cursor">|</span>
-                        </p>
-                        <div class="appreciation-icons">
-                            <i class="fas fa-heart pulse-icon"></i>
-                            <i class="fas fa-star pulse-icon"></i>
-                            <i class="fas fa-trophy pulse-icon"></i>
-                        </div>
-                        <button class="btn btn-primary btn-lg celebration-btn" onclick="triggerCelebration()">
-                            <i class="fas fa-rocket me-2"></i>Celebrate Our Journey!
-                        </button>
+
+
+<section id="appreciation" class="py-5 appreciation-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="appreciation-content">
+                    <h2 class="appreciation-title">Thank You!</h2>
+                    <p class="appreciation-message typewriter-text" id="typewriter-message">
+                        <span class="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <div class="appreciation-icons">
+                        <i class="fas fa-heart pulse-icon"></i>
+                        <i class="fas fa-star pulse-icon"></i>
+                        <i class="fas fa-trophy pulse-icon"></i>
                     </div>
+                    <button class="btn btn-primary btn-lg celebration-btn" onclick="triggerCelebration()">
+                        <i class="fas fa-rocket me-2"></i>Celebrate Our Journey!
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-darker text-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <p class="mb-0">&copy; 2025 CCIT, PRMSU, Student Government. All rights reserved.</p>
-                </div>
-                <div class="col-lg-6 text-end">
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
+
+<footer class="py-4 bg-darker text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p class="mb-0">&copy; 2025 PRMSU Main Campus CCIT SBO. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/prmsumain.ccit.sbo" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:prmsumain.ccit.sbo@gmail.com" class="social-link"><i class="fab fa-envelope"></i></a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Enhanced Custom JS with Page Load Confetti -->
-    <script>
-    // Initialize AOS
+
+<script>
+            // Initialize AOS
     AOS.init({
         duration: 800,
         easing: "ease-in-out",
@@ -526,7 +777,7 @@
         offset: 100,
     });
 
-    // Enhanced Confetti System
+            // Enhanced Confetti System
     class ConfettiSystem {
         constructor() {
             this.container = document.getElementById('confetti-container');
@@ -538,7 +789,7 @@
                 const confetti = document.createElement('div');
                 confetti.className = 'confetti';
 
-                // Random properties
+                        // Random properties
                 const color = this.colors[Math.floor(Math.random() * this.colors.length)];
                 const size = Math.random() * 8 + 4;
                 const left = Math.random() * 100;
@@ -546,7 +797,7 @@
                 const animationDelay = Math.random() * 2;
                 const rotation = Math.random() * 360;
 
-                // Style the confetti
+                        // Style the confetti
                 confetti.style.backgroundColor = color;
                 confetti.style.width = `${size}px`;
                 confetti.style.height = `${size}px`;
@@ -555,7 +806,7 @@
                 confetti.style.animationDelay = `${animationDelay}s`;
                 confetti.style.transform = `rotate(${rotation}deg)`;
 
-                // Random shapes
+                        // Random shapes
                 if (Math.random() > 0.5) {
                     confetti.style.borderRadius = '50%';
                 } else if (Math.random() > 0.7) {
@@ -565,7 +816,7 @@
 
                 this.container.appendChild(confetti);
 
-                // Remove confetti after animation
+                        // Remove confetti after animation
                 setTimeout(() => {
                     if (confetti.parentNode) {
                         confetti.remove();
@@ -574,25 +825,25 @@
             }
         }
 
-        // Welcome confetti burst for page load
+                // Welcome confetti burst for page load
         welcomeBurst() {
-            // First burst - immediate
+                    // First burst - immediate
             this.createConfetti(80, 3000);
 
-            // Second burst - delayed
+                    // Second burst - delayed
             setTimeout(() => {
                 this.createConfetti(60, 3000);
             }, 800);
 
-            // Third burst - more delayed
+                    // Third burst - more delayed
             setTimeout(() => {
                 this.createConfetti(40, 2500);
             }, 1600);
         }
 
-        // Celebration confetti for button click
+                // Celebration confetti for button click
         celebrationBurst() {
-            // Multiple rapid bursts
+                    // Multiple rapid bursts
             this.createConfetti(120, 4000);
 
             setTimeout(() => {
@@ -609,7 +860,7 @@
         }
     }
 
-    // Future Leaders Image Carousel
+            // Future Leaders Image Carousel
     class FutureLeadersCarousel {
         constructor() {
             this.images = document.querySelectorAll('.future-image');
@@ -630,13 +881,13 @@
 
             this.isActive = true;
             this.intervalId = setInterval(() => {
-                // Fade out current image
+                        // Fade out current image
                 this.images[this.currentIndex].classList.remove('active');
 
-                // Move to next image
+                        // Move to next image
                 this.currentIndex = (this.currentIndex + 1) % this.images.length;
 
-                // Fade in new image
+                        // Fade in new image
                 setTimeout(() => {
                     this.images[this.currentIndex].classList.add('active');
                 }, 300); // Half of the CSS transition time
@@ -659,10 +910,10 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Start carousel when section comes into view
+                                // Start carousel when section comes into view
                         this.startCarousel();
                     } else {
-                        // Stop carousel when section leaves view
+                                // Stop carousel when section leaves view
                         this.stopCarousel();
                     }
                 });
@@ -674,95 +925,7 @@
             observer.observe(section);
         }
     }
-
-    // Page Load Animation Controller
-    class PageLoadController {
-        constructor() {
-            this.confettiSystem = new ConfettiSystem();
-            this.init();
-        }
-
-        init() {
-            // Wait for page to fully load
-            window.addEventListener('load', () => {
-                this.startLoadAnimations();
-            });
-        }
-
-        startLoadAnimations() {
-            // Add loaded class to body
-            document.body.classList.add('loaded');
-
-            // Trigger welcome confetti after a short delay
-            setTimeout(() => {
-                this.confettiSystem.welcomeBurst();
-            }, 1000);
-
-            // Animate hero title lines
-            setTimeout(() => {
-                const titleLines = document.querySelectorAll('.title-line');
-                titleLines.forEach((line, index) => {
-                    setTimeout(() => {
-                        line.style.opacity = '1';
-                        line.style.transform = 'translateY(0)';
-                        line.style.transition = 'all 0.8s ease';
-                    }, index * 300);
-                });
-            }, 1500);
-
-            // Show welcome message in console
-            console.log('🎉 Welcome to our Journey of Excellence! 🎉');
-        }
-    }
-
-    // Enhanced celebration function
-    function triggerCelebration() {
-        const confettiSystem = new ConfettiSystem();
-        confettiSystem.celebrationBurst();
-
-        // Show celebration message
-        const btn = document.querySelector('.celebration-btn');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check me-2"></i>Thank You!';
-        btn.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
-        btn.style.transform = 'scale(0.95)';
-
-        setTimeout(() => {
-            btn.style.transform = 'scale(1.05)';
-        }, 150);
-
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = 'linear-gradient(45deg, #ffd700, #ffed4e)';
-            btn.style.transform = 'scale(1)';
-        }, 3000);
-    }
-
-    // Simple smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Simple navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.glass-nav');
-        if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Typewriter Effect for Appreciation Message
+            // Typewriter Effect for Appreciation Message
     class TypewriterEffect {
         constructor() {
             this.text = `To everyone who made this incredible journey not only possible but truly unforgettable —
@@ -796,7 +959,7 @@ Together, we've built more than achievements — we've built a community. And fo
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting && !this.isTyping) {
-                        // Start typing animation when section comes into view
+                                // Start typing animation when section comes into view
                         setTimeout(() => {
                             this.startTyping();
                         }, 500); // Small delay before starting
@@ -820,7 +983,7 @@ Together, we've built more than achievements — we've built a community. And fo
                 if (this.textIndex < this.text.length) {
                     const char = this.text.charAt(this.textIndex);
 
-                    // Handle line breaks
+                            // Handle line breaks
                     if (char === '\n') {
                         this.typedTextElement.innerHTML += '<br><br>';
                     } else {
@@ -829,17 +992,17 @@ Together, we've built more than achievements — we've built a community. And fo
 
                     this.textIndex++;
 
-                    // Vary typing speed slightly for more natural effect
+                            // Vary typing speed slightly for more natural effect
                     const speed = this.typingSpeed + (Math.random() * 30 - 15);
                     setTimeout(typeNextCharacter, speed);
 
-                    // Auto-scroll to keep the typing in view
+                            // Auto-scroll to keep the typing in view
                     this.typedTextElement.scrollIntoView({
                         behavior: 'smooth',
                         block: 'center'
                     });
                 } else {
-                    // Typing complete
+                            // Typing complete
                     this.cursorElement.style.animation = 'blink 1s infinite';
                     setTimeout(() => {
                         this.cursorElement.style.opacity = '0';
@@ -850,13 +1013,100 @@ Together, we've built more than achievements — we've built a community. And fo
             typeNextCharacter();
         }
     }
+            // Page Load Animation Controller
+    class PageLoadController {
+        constructor() {
+            this.confettiSystem = new ConfettiSystem();
+            this.init();
+        }
 
-    // Initialize all controllers when DOM is loaded
+        init() {
+                    // Wait for page to fully load
+            window.addEventListener('load', () => {
+                this.startLoadAnimations();
+            });
+        }
+
+        startLoadAnimations() {
+                    // Add loaded class to body
+            document.body.classList.add('loaded');
+
+                    // Trigger welcome confetti after a short delay
+            setTimeout(() => {
+                this.confettiSystem.welcomeBurst();
+            }, 1000);
+
+                    // Animate hero title lines
+            setTimeout(() => {
+                const titleLines = document.querySelectorAll('.title-line');
+                titleLines.forEach((line, index) => {
+                    setTimeout(() => {
+                        line.style.opacity = '1';
+                        line.style.transform = 'translateY(0)';
+                        line.style.transition = 'all 0.8s ease';
+                    }, index * 300);
+                });
+            }, 1500);
+
+                    // Show welcome message in console
+            console.log('🎉 Welcome to our Journey of Excellence! 🎉');
+        }
+    }
+
+            // Enhanced celebration function
+    function triggerCelebration() {
+        const confettiSystem = new ConfettiSystem();
+        confettiSystem.celebrationBurst();
+
+                // Show celebration message
+        const btn = document.querySelector('.celebration-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check me-2"></i>Thank You!';
+        btn.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+        btn.style.transform = 'scale(0.95)';
+
+        setTimeout(() => {
+            btn.style.transform = 'scale(1.05)';
+        }, 150);
+
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = 'linear-gradient(45deg, #ffd700, #ffed4e)';
+            btn.style.transform = 'scale(1)';
+        }, 3000);
+    }
+
+            // Simple smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+            // Simple navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.glass-nav');
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+            // Initialize all controllers when DOM is loaded
     document.addEventListener('DOMContentLoaded', function() {
         new FutureLeadersCarousel();
         new PageLoadController();
-        new TypewriterEffect(); // Add this line
+        new TypewriterEffect();
     });
 </script>
 </body>
+
 </html>
