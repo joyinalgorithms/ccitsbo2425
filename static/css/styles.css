@@ -3078,6 +3078,46 @@ body.loaded .title-line {
 }
 @media (max-width: 991.98px) {
   .hero-section {
-    padding-top: 100px; 
+    padding-top: 100px;
   }
+}
+.constitution-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.constitution-section h4 {
+    font-size: 1.3rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.constitution-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.const-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    flex-shrink: 0;
+}
+
+.const-content h6 {
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.const-content p {
+    margin: 0.3rem 0 0;
+    color: #6c757d;
+    font-size: 0.9rem;
 }
