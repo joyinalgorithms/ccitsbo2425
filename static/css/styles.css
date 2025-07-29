@@ -71,6 +71,11 @@ body.loaded .title-line {
     margin: 0.25rem;
 }
 
+.logo-header {
+    display: flex;
+    align-items: center;
+    justify content: center;
+}
 .nav-logo {
     width: 40px;
     height: 40px;
@@ -3044,10 +3049,11 @@ body.loaded .title-line {
 
 @media (max-width: 991.98px) {
     .navbar-brand-container {
-        flex-direction: column;
-        align-items: start;
+        flex-direction: row;
+        align-items: center;
         gap: 10px;
         margin-bottom: 10px;
+
     }
 
     .logo-group {
@@ -3120,4 +3126,49 @@ body.loaded .title-line {
     margin: 0.3rem 0 0;
     color: #6c757d;
     font-size: 0.9rem;
+}
+.logo-header {
+    margin-bottom: 1rem;
+}
+
+.logo-group-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    max-height: 70px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .nav-logo {
+        max-height: 50px;
+    }
+
+    .logo-group-container {
+        gap: 0.5rem;
+    }
+
+    .title-line {
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .main-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .year-badge {
+        font-size: 0.9rem;
+        font-style: italic;
+    }
 }
