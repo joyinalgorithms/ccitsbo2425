@@ -576,7 +576,7 @@ body.loaded .title-line {
     color: white;
     padding: 2rem;
     border-radius: 15px;
-    text-align: center;
+    text-align: start;
     margin-top: 2rem;
 }
 
